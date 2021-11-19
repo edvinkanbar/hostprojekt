@@ -17,9 +17,6 @@
                 <a class="nav-link active" aria-current="page" href="./index.php">Hem</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./bilder.php">Bilder</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./bildGalleri.php">Bildgalleri</a>
             </li>
             <li class="nav-item">
@@ -30,7 +27,7 @@
             </li>
         </ul>
 
-        <form class="kol2" action="bilder.php" enctype="multipart/form-data" method="POST">
+        <form class="kol2" action="bildGalleri.php" enctype="multipart/form-data" method="POST">
             <label>Ladda up bilder</label>
             <input type="file" name="file"><br />
             <button class="primary" type="submit" value="Upload" name="Submit1">Ladda up</button>

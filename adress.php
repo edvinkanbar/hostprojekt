@@ -17,9 +17,6 @@
                 <a class="nav-link" aria-current="page" href="./index.php">Hem</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./bilder.php">Bilder</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./bildGalleri.php">Bildgalleri</a>
             </li>
             <li class="nav-item">

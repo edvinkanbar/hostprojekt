@@ -17,9 +17,6 @@
                 <a class="nav-link" aria-current="page" href="./index.php">Hem</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./bilder.php">Bilder</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./bildGalleri.php">Bildgalleri</a>
             </li>
             <li class="nav-item">
@@ -32,6 +29,17 @@
 
         <?php
 
+        if (isset($_POST['Submit1'])) {
+            $filepath = "uppladdade-bilder/" . $_FILES["file"]["name"];
+
+            if (move_uploaded_file($_FILES["file"]["tmp_name"], $filepath)) {
+                echo "<div class=\"imgKontainer\"><img src=" . $filepath . " alt=\"\"></div>";
+            } else {
+                echo "<p class=\"alert alert-danger\">Det blev fel!</p>";
+            }
+        }
+
+
         $dir = "./uppladdade-bilder";
         $filer = scandir($dir);
 
@@ -39,7 +47,6 @@
             if ($fil != "." && $fil != "..") {
                 echo "<div class=\"imgKontainer\"><img src=$dir/$fil></div>";
             }
-            
         }
 
 
