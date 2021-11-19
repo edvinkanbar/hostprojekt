@@ -13,7 +13,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 body {
-    background: url(./bilder/background.jpg);
+    background: url(./bilder/rödad.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
